@@ -1,0 +1,33 @@
+{
+  "menu": {
+    "create_a_post": "Crie um post",
+    "home": "Painel",
+    "explore": "Explore",
+    "inbox": "Caixa de entrada",
+    "messaging": "Chat",
+    "activity": "Atividade",
+    "likes": "Curtidas",
+    "following": "Seguindo",
+    "settings": "Configurações",
+    "go": "Navegar sem anúncios",
+    "help": "Ajuda",
+    "change_palette": "Mudar Paleta",
+    "settings_account": "Conta",
+    "settings_dashboard": "Painel",
+    "settings_notifications": "Notificações",
+    "settings_ads": "Navegação sem anúncios",
+    "settings_post_and_subs": "Assinaturas Post+",
+    "settings_apps": "Apps",
+    "settings_privacy": "Privacidade",
+    "settings_labs": "Labs",
+    "settings_logout": "Sair"
+  },
+  "footer": {
+    "about": "Sobre",
+    "apps": "Aplicativos",
+    "legal": "Informações legais",
+    "privacy": "Privacidade"
+  },
+  "search_placeholder": "Buscar no Tumblr",
+  "tags_you_follow": "Tags que você segue"
+}

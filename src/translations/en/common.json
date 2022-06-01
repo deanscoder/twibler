@@ -1,0 +1,33 @@
+{
+  "menu": {
+    "create_a_post": "Create a post",
+    "home": "Dashboard",
+    "explore": "Explore",
+    "inbox": "Inbox",
+    "messaging": "Messaging",
+    "activity": "Activity",
+    "likes": "Likes",
+    "following": "Following",
+    "settings": "Settings",
+    "go": "Go Ad-Free",
+    "help": "Help",
+    "change_palette": "Change Palette",
+    "settings_account": "Account",
+    "settings_dashboard": "Dashboard",
+    "settings_notifications": "Notifications",
+    "settings_ads": "Ad-Free Browsing",
+    "settings_post_and_subs": "Post+ subscriptions",
+    "settings_apps": "Apps",
+    "settings_privacy": "Privacy",
+    "settings_labs": "Labs",
+    "settings_logout": "Logout"
+  },
+  "footer": {
+    "about": "About",
+    "apps": "Apps",
+    "legal": "Legal",
+    "privacy": "Privacy"
+  },
+  "search_placeholder": "Search Tumblr",
+  "tags_you_follow": "Tags you follow"
+}
