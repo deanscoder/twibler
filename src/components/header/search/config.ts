@@ -8,26 +8,26 @@ const CONFIG = [
   },
   {
     id: uuid(),
-    name: 'developers & startup',
-    url: encodeURI('developers & startup'),
+    name: 'brazil dev',
+    url: encodeURI('brasil dev'),
     thumbnail: '#'
   },
   {
     id: uuid(),
-    name: 'health & fitness',
-    url: encodeURI('health & fitness'),
+    name: 'copa do mundo',
+    url: encodeURI('copa do mundo'),
     thumbnail: '#'
   },
   {
     id: uuid(),
-    name: 'home & lifestyle',
-    url: encodeURI('home & lifestyle'),
+    name: 'techno',
+    url: encodeURI('techno'),
     thumbnail: '#'
   },
   {
     id: uuid(),
-    name: 'motivation',
-    url: encodeURI('motivation'),
+    name: 'beach',
+    url: encodeURI('beach'),
     thumbnail: '#'
   },
   {
@@ -38,8 +38,8 @@ const CONFIG = [
   },
   {
     id: uuid(),
-    name: 'parenting',
-    url: encodeURI('parenting'),
+    name: 'surf',
+    url: encodeURI('surf'),
     thumbnail: '#'
   },
   {

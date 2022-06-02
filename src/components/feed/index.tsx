@@ -113,8 +113,8 @@ const Feed = (props: any): JSX.Element => {
       __medias(medias.concat(res.media))
       __tweets_sensitive(temp_tweets_sensitive)
       __next_token(res.next_token)
-      console.log(tweets)
-      console.log(next_token)
+      //console.log(tweets)
+      //console.log(next_token)
     }
     __loading(false)
   }
@@ -143,8 +143,8 @@ const Feed = (props: any): JSX.Element => {
         __medias(medias.concat(res.media))
         __tweets_sensitive(temp_tweets_sensitive)
         __next_token(res.next_token)
-        console.log(tweets)
-        console.log(next_token)
+        //console.log(tweets)
+        //console.log(next_token)
       }
 
     } catch (err) {
@@ -190,7 +190,6 @@ const Feed = (props: any): JSX.Element => {
 
   // LISTEN STATE tweets
   useEffect(() => {
-    console.log(tweets.length)
     __loading(false)
   }, [tweets])
 
@@ -208,7 +207,6 @@ const Feed = (props: any): JSX.Element => {
       require_twittes()
     }
   }, [query])
-  console.log('loading: ', loading)
 
 
   return (

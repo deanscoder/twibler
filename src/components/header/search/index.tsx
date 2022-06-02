@@ -34,8 +34,9 @@ const Search = (): JSX.Element => {
       setOO(true)
 
     } else {
-
-      setS(value)
+      setTimeout(() =>
+        setS(value)
+        , 1000)
 
     }
   }
@@ -49,6 +50,7 @@ const Search = (): JSX.Element => {
       let value = input.value
 
       if (value.length > 3) {
+        value = value.replace(/[^\p{L}\p{M}]+/u, '') // REMOVE SPECIAL CHAR
 
         let query = encodeURI(value)
 
@@ -100,8 +102,8 @@ const Search = (): JSX.Element => {
           </section>
 
           {CONFIG.length && CONFIG.map(o =>
-            <Link key={o.id} href={ '/expĺore/' + o.url}>
-              <a onClick={() => Router.push('/expĺore/' + o.url)}>
+            <Link key={o.id} href={'/explore/' + o.url}>
+              <a>
 
                 <css.Search_Thumbnail image={o.thumbnail} />
 

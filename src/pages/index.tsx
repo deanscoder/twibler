@@ -9,7 +9,7 @@ const Home: NextPage = () => {
   return (
     <css.Container>
       <Head>
-        <title>Twibler Web - Client minimalista de Mini-blogs</title>
+        <title>Twibler Web - Client minimalista de mini-blogs</title>
         <meta name="description" content="Twibler Web é um client minimalista e elegante para consumir as APIs do Twitter e transformar em mini-blogs, bom pelo menos por enquanto!" />
         <meta name="keywords" content="twibler, twibler web, mini blog, social media minimalista" />
       </Head>
