@@ -1,6 +1,7 @@
 {
   "menu": {
     "create_a_post": "Create a post",
+    "account": "Account",
     "home": "Dashboard",
     "explore": "Explore",
     "inbox": "Inbox",
@@ -28,6 +29,11 @@
     "legal": "Legal",
     "privacy": "Privacy"
   },
-  "search_placeholder": "Search Tumblr",
+  "search_placeholder": "Search Twibler",
+  "main_post_text": "Recent posts from Twitter's API",
+  "about_me": "Connect me",
+  "search_filter": "Sensitive content",
+  "safe": "blocked",
+  "unsafe": "allowed",
   "tags_you_follow": "Tags you follow"
 }

@@ -40,6 +40,7 @@ export const Container = styled.nav`
     svg {
       fill: ${props => props.theme.colors.text};
       margin-right: 13px;
+      
     }
   }
 
@@ -88,11 +89,19 @@ export const Container = styled.nav`
         h3 {
           font-weight: 400;
           font-size: 18px;
+
+          span {
+            font-size: 12px;
+            opacity: .65;
+            margin: 0 10px;
+          }
         }
         svg {
           fill: ${props => props.theme.colors.text};
           size: 1.5em;
           margin: 0 30px 0 15px;
+          width: 20px;
+          height: 20px;
         }
       }
     }

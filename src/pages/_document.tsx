@@ -48,7 +48,7 @@ export default class MyDocument extends Document {
           <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true" />
           <link href="https://fonts.googleapis.com/css2?family=Righteous&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet"></link>
           <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500;600&display=swap" rel="stylesheet"></link><link rel="stylesheet" href="https://use.typekit.net/wjj1sol.css" />
-          <meta property="og:site_name" content='Tumblr Feed Clone' />
+          <meta property="og:site_name" content='Twibler Web Client' />
           <meta property="og:author" content='Ezequiel Gudbrand' />
           <meta property="og:type" content='website' />
         </Head>

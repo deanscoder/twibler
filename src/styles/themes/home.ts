@@ -1,11 +1,11 @@
 export default {
-  title: 'light',
+  title: 'home',
 
   colors: {
     primary: '#233850',
     secundary: '#A5AEB7 ',
-    background: '#BAD9CE', //001935
-    accent: '#0D0A07',
+    background: '#001935', //001935
+    accent: '#0CF25D',
     text: '#fff',
     note: '#FF4930',
     reblog: '#00CF35',

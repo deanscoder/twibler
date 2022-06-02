@@ -5,11 +5,27 @@ import Search from './search'
 import * as css from './styles'
 import Side_Menu from '../side_menu'
 import { useControllers } from '../../contexts/controllers'
+import { useTranslation } from "react-i18next";
 
 const Header = (): JSX.Element => {
   const [search, setS] = useState(false)
-
   const { menu, __menu } = useControllers()
+  const { t, i18n } = useTranslation('common');
+  const { language, __language } = useControllers()
+
+  useEffect(() => {
+    const local_language = localStorage.getItem('Twibler:lang')
+
+    if (local_language) {
+      __language(local_language)
+    }
+  }, [])
+
+  useEffect(() => {
+    if (language) {
+      i18n.changeLanguage(language)
+    }
+  }, [language])
 
   // END OF SLIDING EFFECT
 

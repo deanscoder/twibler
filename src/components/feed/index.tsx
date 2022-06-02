@@ -9,6 +9,7 @@ import filter_sensitive_tweets from './filter_sensitive'
 import { useRouter } from 'next/router'
 import Switch from "react-switch"
 import User_Popup from '../userpopup'
+import { useTranslation } from "react-i18next";
 
 interface Media extends MediaObjectV2 {
   variants?: Array<{
@@ -30,6 +31,7 @@ const Feed = (props: any): JSX.Element => {
   const [loading, __loading] = useState(false)
   const [nsfw, __nsfw] = useState(true)
   const [query, __query] = useState('')
+  const { t } = useTranslation('common');
 
   const Router = useRouter()
   const { q } = Router.query
@@ -215,7 +217,7 @@ const Feed = (props: any): JSX.Element => {
 
         <div id="switch-nsfw">
           <div>
-            Content Filter {nsfw ? 'safe' : 'unsafe'}
+            {t("search_filter")} {nsfw ? t('safe') : t('unsafe')}
           </div>
           <Switch
             height={18} handleDiameter={15} width={50}
@@ -232,8 +234,8 @@ const Feed = (props: any): JSX.Element => {
             <css.UserContainer src={profile_image} />
             <css.Tools>
               <h2>
-                Consuming API of Twitter
-        </h2>
+                {t('main_post_text')}
+              </h2>
             </css.Tools>
 
           </css.Create_Post>}

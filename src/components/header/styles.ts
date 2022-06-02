@@ -196,7 +196,7 @@ export const Menu = styled.div`
     display: flex;
     align-items: center;
 
-    a {
+    .nice-button {
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -206,6 +206,8 @@ export const Menu = styled.div`
       height: 32px;
       margin-left: 18px;
       border-radius: 3px;
+      color: #000;
+      font-weight: 700;
     }
     
     div {

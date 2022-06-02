@@ -1,6 +1,7 @@
 {
   "menu": {
     "create_a_post": "Crie um post",
+    "account": "Conta",
     "home": "Painel",
     "explore": "Explore",
     "inbox": "Caixa de entrada",
@@ -28,6 +29,11 @@
     "legal": "Informações legais",
     "privacy": "Privacidade"
   },
-  "search_placeholder": "Buscar no Tumblr",
+  "search_placeholder": "Buscar no Twibler",
+  "main_post_text": "Posts recentes da API do Twitter",
+  "about_me": "Conecte-se comigo",
+  "search_filter": "Conteúdo sensível",
+  "safe": "bloqueado",
+  "unsafe": "permitido",
   "tags_you_follow": "Tags que você segue"
 }

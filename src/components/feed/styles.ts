@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 export const Container = styled.div`
   display: flex;
-  max-width: 990px;
+  max-width: 630px;
   width: 100%;
   justify-content: space-between;
   margin: 40px 0;
@@ -33,7 +33,6 @@ export const Container = styled.div`
 
   @media (max-width: 980px) {
     justify-content: center;
-    width: 100%;
   }
 `
 

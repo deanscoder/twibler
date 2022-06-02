@@ -2,10 +2,11 @@ import * as css from '../styles'
 import CONFIG from './config'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
+import { useControllers } from '../../../contexts/controllers'
 
 const Menu = (): JSX.Element => {
   const Router = useRouter()
-
+  const { language, __language } = useControllers()
   return (
     <css.Menu>
 
@@ -21,9 +22,11 @@ const Menu = (): JSX.Element => {
           </div>
         )}
 
-        <Link href="#">
-          <a>
-            <svg
+        <div
+          className="nice-button"
+          onClick={() => __language(language === 'en' ? 'pt' : 'en')}>
+          {language}
+          {/* <svg
               viewBox="0 0 16.8 16.8"
               width="22"
               height="22">
@@ -32,8 +35,8 @@ const Menu = (): JSX.Element => {
               8.2zM10 6.3l-6.2 6.2-.6-.6 6.2-6.2c0-.1.6.6.6.6zM13.1
               0l-2.5 2.5 3.7 3.7 2.5-2.5L13.1 0z">
               </path>
-            </svg>
-          </a></Link>
+            </svg> */}
+        </div>
       </nav>
 
     </css.Menu>

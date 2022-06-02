@@ -3,55 +3,55 @@ const CONFIG = [
   {
     id: uuid(),
     name: 'anime',
-    url: '#',
+    url: encodeURI('anime'),
     thumbnail: '#'
   },
   {
     id: uuid(),
     name: 'developers & startup',
-    url: '#',
+    url: encodeURI('developers & startup'),
     thumbnail: '#'
   },
   {
     id: uuid(),
     name: 'health & fitness',
-    url: '#',
+    url: encodeURI('health & fitness'),
     thumbnail: '#'
   },
   {
     id: uuid(),
     name: 'home & lifestyle',
-    url: '#',
+    url: encodeURI('home & lifestyle'),
     thumbnail: '#'
   },
   {
     id: uuid(),
     name: 'motivation',
-    url: '#',
+    url: encodeURI('motivation'),
     thumbnail: '#'
   },
   {
     id: uuid(),
     name: 'nature',
-    url: '#',
+    url: encodeURI('nature'),
     thumbnail: '#'
   },
   {
     id: uuid(),
     name: 'parenting',
-    url: '#',
+    url: encodeURI('parenting'),
     thumbnail: '#'
   },
   {
     id: uuid(),
     name: 'photography',
-    url: '#',
+    url: encodeURI('photography'),
     thumbnail: '#'
   },
   {
     id: uuid(),
     name: 'programing',
-    url: '#',
+    url: encodeURI('programing'),
     thumbnail: '#'
   }
 ]

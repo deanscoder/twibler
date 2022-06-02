@@ -3,6 +3,7 @@ import * as css from '../../styles/pages/home'
 import Head from 'next/head'
 import Feed from '../../components/feed'
 import { useRouter } from 'next/router'
+import AboutMe from '../../components/about'
 
 const Explore: NextPage = (props: any) => {
   const Router = useRouter()
@@ -10,12 +11,16 @@ const Explore: NextPage = (props: any) => {
   return (
     <css.Container>
       <Head>
-        <title>Explore {props.query} - Twibler</title>
+        <title>Explore {props.query} - Twibler Web</title>
+        <meta name="description" content="Explore agora todos os posts recentes por palavra-chave ou hashtags" />
+        <meta name="googlebot" content="noindex" />
       </Head>
 
       <Feed
         query={props.query}
       />
+
+      <AboutMe />
 
     </css.Container>
   )

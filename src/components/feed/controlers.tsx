@@ -91,14 +91,14 @@ const Controlers = (props: { PID: string }): JSX.Element => {
       }
     }
 
-    localStorage.setItem('Twiblr:likes', JSON.stringify(list))
+    localStorage.setItem('Twibler:likes', JSON.stringify(list))
 
   }
 
   // SEARCH FOR LIST OF POST IDS
   // IF FIND ATTACH TO list STATE
   useEffect(() => {
-    let rescue_data = localStorage.getItem('Twiblr:likes')
+    let rescue_data = localStorage.getItem('Twibler:likes')
 
     if (rescue_data) {
       __list(JSON.parse(rescue_data))

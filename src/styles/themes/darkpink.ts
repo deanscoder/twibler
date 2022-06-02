@@ -1,11 +1,11 @@
 export default {
-  title: 'light',
+  title: 'darkpink',
 
   colors: {
     primary: '#233850',
     secundary: '#A5AEB7 ',
-    background: '#BAD9CE', //001935
-    accent: '#0D0A07',
+    background: '#161F26', //001935 #202140
+    accent: '#FF009C',
     text: '#fff',
     note: '#FF4930',
     reblog: '#00CF35',

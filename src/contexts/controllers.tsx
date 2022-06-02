@@ -3,6 +3,8 @@ import React, { useContext, createContext, useEffect, useState } from 'react'
 interface CONTROLLERS_INTERFACE {
   __menu: React.Dispatch<boolean>
   menu: boolean
+  __language: React.Dispatch<string>
+  language: string
   open_side_menu(): void
   close_side_menu(): void
 }
@@ -14,10 +16,15 @@ const Controllers_Context = createContext<CONTROLLERS_INTERFACE>(
 function Controllers_Provider<CONTROLLERS_INTERFACE>(props: any) {
   const { children } = props
   const [menu, __menu] = useState(false)
+  const [language, __language] = useState('en')
 
   useEffect(() => {
     menu ? open_side_menu() : close_side_menu();
   }, [menu])
+
+  useEffect(() => {
+    localStorage.setItem('Twibler:lang', language);
+  }, [language])
 
   function open_side_menu(): void {
     let side_menu_wrapper = document.querySelector(
@@ -47,7 +54,7 @@ function Controllers_Provider<CONTROLLERS_INTERFACE>(props: any) {
 
   return (
     <Controllers_Context.Provider value={{
-      __menu, menu, open_side_menu, close_side_menu
+      __menu, menu, open_side_menu, close_side_menu, language, __language
     }}>
       {children}
     </Controllers_Context.Provider>

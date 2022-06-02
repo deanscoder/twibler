@@ -1,7 +1,7 @@
 import type { AppProps } from 'next/app'
 import GlobalStyles from '../styles/global'
 import { ThemeContext, ThemeProvider } from 'styled-components'
-import light from '../styles/themes/light'
+import home from '../styles/themes/home'
 import dark from '../styles/themes/dark'
 import { useState } from 'react'
 import Header from '../components/header'
@@ -28,7 +28,7 @@ i18next.init({
 
 function MyApp({ Component, pageProps }: AppProps) {
 
-  const [theme, setTheme] = useState(light)
+  const [theme, setTheme] = useState(home)
 
   // FUNCTION TO CHANGE THEME
   // TO BE SENT AS PROP OR
@@ -36,11 +36,11 @@ function MyApp({ Component, pageProps }: AppProps) {
   const toggleTheme = (): void => {
 
     localStorage.setItem('GB7:TEMA', JSON.stringify(
-      theme.title === 'light' ? dark : light
+      theme.title === 'home' ? dark : home
     )
     )
 
-    setTheme(theme.title === 'light' ? dark : light)
+    setTheme(theme.title === 'home' ? dark : home)
 
   }
 

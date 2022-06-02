@@ -100,8 +100,8 @@ const Search = (): JSX.Element => {
           </section>
 
           {CONFIG.length && CONFIG.map(o =>
-            <Link key={o.id} href={'/explore/' + encodeURI(o.name)}>
-              <a>
+            <Link key={o.id} href={ '/expĺore/' + o.url}>
+              <a onClick={() => Router.push('/expĺore/' + o.url)}>
 
                 <css.Search_Thumbnail image={o.thumbnail} />
 

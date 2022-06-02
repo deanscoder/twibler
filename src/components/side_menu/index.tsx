@@ -1,6 +1,5 @@
 import CONFIG from './config';
 import * as css from './styles'
-import Link from 'next/link'
 import { useRouter } from 'next/router'
 import { useTranslation } from 'react-i18next'
 import { useEffect, useState } from 'react';
@@ -11,7 +10,7 @@ const Side_Menu = (): JSX.Element => {
   const { t } = useTranslation('common')
   const [ready, setR] = useState(false)
 
-  const { __menu } = useControllers()
+  const { __menu, language, __language } = useControllers()
 
   useEffect(() => {
     setR(true)
@@ -74,17 +73,20 @@ const Side_Menu = (): JSX.Element => {
     <css.Container id="side_menu_wrapper">
 
       <div className="side_menu_create_post">
-        <button>
+        <button
+          onClick={
+            () => language === 'en' ? __language('pt') : __language('en')
+          }>
 
-          <svg viewBox="0 0 16.8 16.8" width="20" height="20">
+          {language === 'en' ? 'in English' : 'em Português'}
+          {/* <svg viewBox="0 0 16.8 16.8" width="20" height="20">
             <path
               d="M1.2 11.9l-1.2 5 5-1.2 8.2-8.2-3.8-3.8-8.2 8.2zM10 
             6.3l-6.2 6.2-.6-.6 6.2-6.2c0-.1.6.6.6.6zM13.1 0l-2.5 2.5 
             3.7 3.7 2.5-2.5L13.1 0z">
             </path>
-          </svg>
+          </svg> */}
 
-          <span>Create a post</span>
         </button>
       </div>
 
@@ -93,19 +95,23 @@ const Side_Menu = (): JSX.Element => {
         {CONFIG().length && CONFIG().map(o =>
           <div key={o.id}>
             <li onClick={() =>
-              o.childs ?
-                dropdown_handler(o.name) //handle_with('sm_' + o.name.toLowerCase() + '_arrow')
-                :
-                handle_link(o.url)
+              /*  o.childs ?
+                 dropdown_handler(o.name) //handle_with('sm_' + o.name.toLowerCase() + '_arrow')
+                 : */
+              handle_link(o.url)
             } >
 
               <div className="side_menu_item">
                 {o.icon}
-                <h3>{o.name}</h3>
+                {o.social ?
+                  <h3>{o.social} <span>{o.name}</span></h3>
+                  :
+                  <h3>{o.name}</h3>
+                }
               </div>
 
               <div className="side_menu_notification">
-                {o.childs &&
+                {/* {o.childs &&
                   <svg
                     id={o.name.toLowerCase() + '_arrow'}
                     width="15"
@@ -120,14 +126,14 @@ const Side_Menu = (): JSX.Element => {
                         0-1.448-1.46l-5.19 4.845-5.196-4.85z">
                     </path>
                   </svg>
-                }
+                } */}
 
               </div>
             </li>
 
-            {o.childs && <ul id={o.name.toLowerCase() + '_childs'}>
+            {/*  {o.childs && <ul id={o.name.toLowerCase() + '_childs'}> */}
 
-              {o.childs.map((child, index) =>
+            {/* {o.childs.map((child, index) =>
 
                 <li
                   key={o.id + '-' + child.name}
@@ -146,7 +152,7 @@ const Side_Menu = (): JSX.Element => {
 
             </ul>
 
-            }
+            } */}
 
           </div>
         )}
