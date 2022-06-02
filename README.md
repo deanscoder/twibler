@@ -18,7 +18,7 @@ O projeto consiste em solicitar alguns tweets diretamente do [API oficial do Twi
     * [Clonando o Repositório](#clone-o-repositório)
     * [Instalando dependencias](#instale-as-dependencias)
     * [Criando/Editando .env](#criando-ou-editando-as-variaveis-de-ambiente)
-  * [License - MIT](#license)
+  * [License - GPLv3](#license)
 
 ## Em Desenvolvimento
 ****
@@ -37,7 +37,7 @@ O projeto consiste em solicitar alguns tweets diretamente do [API oficial do Twi
 
 
 ### Demonstração
-[View Demo | Ver Demo](https://twibler-tumblr-clone.vercel.app/)
+[View Demo | Ver Demo](https://twibler.vercel.app/)
 
 # Objetivos
 ### Para o Projeto
@@ -116,4 +116,4 @@ As seguintes tecnologias de maior impacto foram usadas;
 A maneira mais fácil de você realizar o deploy de uma aplicação Next é na [Plataforma Vercel](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app) tanto em desenvolvimento como em produção.
 
 # LICENSE
-[MIT](LICENSE)
+[GNU GPLv3](COPYING)
